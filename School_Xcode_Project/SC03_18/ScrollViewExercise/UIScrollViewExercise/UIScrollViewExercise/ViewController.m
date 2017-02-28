@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginPassViewController.h"
 
 @interface ViewController ()
 <UIScrollViewDelegate,UITextFieldDelegate>
@@ -14,6 +15,7 @@
 @property UIView *loginContents;
 @property UITextField *txtFldID;
 @property UITextField *txtFldPW;
+@property LoginPassViewController *sVC;
 //@property UIView *loginContents2;
 //@property UIView *loginContents3;
 @end
@@ -98,15 +100,16 @@
     
     
     //4. SetTitleLabel
-    UILabel *titleLb = [[UILabel alloc] initWithFrame:CGRectMake(160, 250, self.loginScView.frame.size.width*70/100, self.loginScView.frame.size.height*5/100)];
+    UILabel *titleLb = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-(self.view.frame.size.width*35/100), 250, self.view.frame.size.width*70/100, self.loginScView.frame.size.height*5/100)];
     titleLb.text = @"로그인";
-    titleLb.font = [UIFont systemFontOfSize:15.0];
+    titleLb.textAlignment = NSTextAlignmentCenter;
+    titleLb.font = [UIFont boldSystemFontOfSize:30.0];
     titleLb.textColor = [UIColor redColor];
     [self.view addSubview:titleLb];
 
     
     //5. UITextField_ID
-    self.txtFldID = [[UITextField alloc]initWithFrame:CGRectMake(130, 300, self.loginScView.frame.size.width*50/100, self.loginScView.frame.size.height*4/100)];
+    self.txtFldID = [[UITextField alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2-(self.view.frame.size.width*25/100), 300, self.view.frame.size.width*50/100, self.loginScView.frame.size.height*4/100)];
     self.txtFldID.delegate = self;
     self.txtFldID.textAlignment = NSTextAlignmentCenter;
     self.txtFldID.placeholder = @"id를 입력하세요";
@@ -117,7 +120,7 @@
     [self.view addSubview:self.txtFldID];
     
     //6. UITextField_PW
-    self.txtFldPW = [[UITextField alloc]initWithFrame:CGRectMake(130, 340, self.loginScView.frame.size.width*50/100, self.loginScView.frame.size.height*4/100)];
+    self.txtFldPW = [[UITextField alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2-(self.view.frame.size.width*25/100), 340, self.view.frame.size.width*50/100, self.loginScView.frame.size.height*4/100)];
     self.txtFldPW .delegate = self;
     self.txtFldPW .textAlignment = NSTextAlignmentCenter;
     self.txtFldPW .placeholder = @"암호를 입력하세요";
@@ -134,7 +137,7 @@
 //    msgView.alpha = 0.1;
     msgView.hidden = YES;
     
-    NSMutableArray
+//    NSMutableArray
     
     [self.view addSubview:msgView];
     
@@ -143,16 +146,27 @@
     msgSucess.textAlignment = NSTextAlignmentCenter;
     msgSucess.textColor = [UIColor whiteColor];
     msgSucess.adjustsFontSizeToFitWidth = YES;
-    
     [msgView addSubview:msgSucess];
 
-                           
-
-    UIPageControl *pgcon = [[UIPageControl alloc]initWithFrame:CGRectMake(self.view.frame.size.width*40/100, self.view.frame.size.height*950/1000, self.view.frame.size.width*10/100, self.view.frame.size.height*50/1000)];
-    pgcon.numberOfPages = 3;
-    pgcon.currentPage = 1;
-    [self.view addSubview:pgcon];
+    UIButton *nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
+    [nextBtn addTarget:self action:@selector(onSelectedBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [nextBtn setTitle:@"Next" forState:UIControlStateNormal];
+    [nextBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [nextBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [self.view addSubview:nextBtn];
     
+
+//    UIPageControl *pgcon = [[UIPageControl alloc]initWithFrame:CGRectMake(self.view.frame.size.width*40/100, self.view.frame.size.height*950/1000, self.view.frame.size.width*10/100, self.view.frame.size.height*50/1000)];
+//    pgcon.numberOfPages = 3;
+//    pgcon.currentPage = 1;
+//    [self.view addSubview:pgcon];
+}
+
+-(void)onSelectedBtn:(UIButton *)sender
+{
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginPassViewController *sVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginPassViewController"];
+    [self.navigationController pushViewController:sVC animated:YES];
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
@@ -166,9 +180,9 @@
 {
     [textField resignFirstResponder];
 //    [self.loginScView setContentOffset:CGPointMake(0,0) animated:YES];
-    if ([self.txtFldID.text isEqualToString:@"smyeo"]) {
-        <#statements#>
-    }
+    
+
+    
     return YES;
 }
 

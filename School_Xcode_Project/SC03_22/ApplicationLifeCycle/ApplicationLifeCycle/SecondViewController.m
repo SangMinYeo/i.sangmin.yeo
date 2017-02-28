@@ -31,6 +31,8 @@
     [self.view addSubview:test2];
     NSLog(@"second test2View appered");
     
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

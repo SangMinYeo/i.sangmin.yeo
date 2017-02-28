@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA40416B1E5AD5F500979BDD /* LoginPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40416A1E5AD5F500979BDD /* LoginPassViewController.m */; };
 		BAE852211E4973D40061361E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE852201E4973D40061361E /* main.m */; };
 		BAE852241E4973D40061361E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE852231E4973D40061361E /* AppDelegate.m */; };
 		BAE852271E4973D40061361E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE852261E4973D40061361E /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA4041691E5AD5F500979BDD /* LoginPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPassViewController.h; sourceTree = "<group>"; };
+		BA40416A1E5AD5F500979BDD /* LoginPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPassViewController.m; sourceTree = "<group>"; };
 		BAE8521C1E4973D40061361E /* UIScrollViewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollViewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE852201E4973D40061361E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAE852221E4973D40061361E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				BAE852231E4973D40061361E /* AppDelegate.m */,
 				BAE852251E4973D40061361E /* ViewController.h */,
 				BAE852261E4973D40061361E /* ViewController.m */,
+				BA4041691E5AD5F500979BDD /* LoginPassViewController.h */,
+				BA40416A1E5AD5F500979BDD /* LoginPassViewController.m */,
 				BAE852281E4973D40061361E /* Main.storyboard */,
 				BAE852391E4991B50061361E /* IMG_3194.JPG */,
 				BAE8523D1E49B1400061361E /* IMG_3178.JPG */,
@@ -119,7 +124,7 @@
 				TargetAttributes = {
 					BAE8521B1E4973D40061361E = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YRRPYZBQ6X;
+						DevelopmentTeam = 368UPH58KA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -166,6 +171,7 @@
 				BAE852271E4973D40061361E /* ViewController.m in Sources */,
 				BAE852241E4973D40061361E /* AppDelegate.m in Sources */,
 				BAE852211E4973D40061361E /* main.m in Sources */,
+				BA40416B1E5AD5F500979BDD /* LoginPassViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YRRPYZBQ6X;
+				DEVELOPMENT_TEAM = 368UPH58KA;
 				INFOPLIST_FILE = UIScrollViewExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.UIScrollViewExercise;
@@ -295,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YRRPYZBQ6X;
+				DEVELOPMENT_TEAM = 368UPH58KA;
 				INFOPLIST_FILE = UIScrollViewExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.UIScrollViewExercise;
@@ -322,6 +328,7 @@
 				BAE852351E4973D40061361E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
