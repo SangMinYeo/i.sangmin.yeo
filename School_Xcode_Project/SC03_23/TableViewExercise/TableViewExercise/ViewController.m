@@ -23,6 +23,7 @@
     self.myTbl.dataSource = self;
     
     [self.view addSubview:self.myTbl];
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

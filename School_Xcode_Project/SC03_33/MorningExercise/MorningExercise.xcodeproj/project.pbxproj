@@ -13,6 +13,7 @@
 		BA72A1AC1E6CECE800FAB734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA72A1AA1E6CECE800FAB734 /* Main.storyboard */; };
 		BA72A1AE1E6CECE800FAB734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA72A1AD1E6CECE800FAB734 /* Assets.xcassets */; };
 		BA72A1B11E6CECE800FAB734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA72A1AF1E6CECE800FAB734 /* LaunchScreen.storyboard */; };
+		BABB07D01E6CFD6E003FEDC1 /* jaeha.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BABB07CF1E6CFD6E003FEDC1 /* jaeha.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA72A1AD1E6CECE800FAB734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA72A1B01E6CECE800FAB734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA72A1B21E6CECE800FAB734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABB07CF1E6CFD6E003FEDC1 /* jaeha.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaeha.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				BA72A1A81E6CECE800FAB734 /* ViewController.m */,
 				BA72A1AA1E6CECE800FAB734 /* Main.storyboard */,
 				BA72A1AD1E6CECE800FAB734 /* Assets.xcassets */,
+				BABB07CF1E6CFD6E003FEDC1 /* jaeha.jpeg */,
 				BA72A1AF1E6CECE800FAB734 /* LaunchScreen.storyboard */,
 				BA72A1B21E6CECE800FAB734 /* Info.plist */,
 				BA72A1A11E6CECE800FAB734 /* Supporting Files */,
@@ -140,6 +143,7 @@
 			files = (
 				BA72A1B11E6CECE800FAB734 /* LaunchScreen.storyboard in Resources */,
 				BA72A1AE1E6CECE800FAB734 /* Assets.xcassets in Resources */,
+				BABB07D01E6CFD6E003FEDC1 /* jaeha.jpeg in Resources */,
 				BA72A1AC1E6CECE800FAB734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +314,7 @@
 				BA72A1B71E6CECE800FAB734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
