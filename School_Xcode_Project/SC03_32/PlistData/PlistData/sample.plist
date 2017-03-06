@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>이름</key>
+		<string>김대근</string>
+		<key>전화번호</key>
+		<string>01066871146</string>
+	</dict>
+	<dict>
+		<key>이름</key>
+		<string>정준호</string>
+		<key>전화번호</key>
+		<string>01068761146</string>
+	</dict>
+	<dict>
+		<key>이름</key>
+		<string>강영태</string>
+		<key>전화번호</key>
+		<string>01032441744</string>
+	</dict>
+	<dict>
+		<key>이름</key>
+		<string>최준석</string>
+		<key>전화번호</key>
+		<string>01074757748</string>
+	</dict>
+	<dict>
+		<key>이름</key>
+		<string>강영태</string>
+		<key>전화번호</key>
+		<string>01032441744</string>
+	</dict>
+	<dict>
+		<key>이름</key>
+		<string>이규호</string>
+		<key>전화번호</key>
+		<string>010472655584</string>
+	</dict>
+</array>
+</plist>
