@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2ACB5E1E6EC93300813765 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2ACB5D1E6EC93300813765 /* CoreTelephony.framework */; };
 		BA51134F1E6EA0DE0022324B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51134E1E6EA0DE0022324B /* main.m */; };
 		BA5113521E6EA0DE0022324B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5113511E6EA0DE0022324B /* AppDelegate.m */; };
 		BA5113551E6EA0DE0022324B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5113541E6EA0DE0022324B /* ViewController.m */; };
 		BA5113581E6EA0DE0022324B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5113561E6EA0DE0022324B /* Main.storyboard */; };
 		BA51135A1E6EA0DE0022324B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5113591E6EA0DE0022324B /* Assets.xcassets */; };
 		BA51135D1E6EA0DE0022324B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA51135B1E6EA0DE0022324B /* LaunchScreen.storyboard */; };
+		BA5113661E6EA1B20022324B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5113651E6EA1B20022324B /* MapKit.framework */; };
+		BA5113681E6EA1C30022324B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5113671E6EA1C30022324B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2ACB5D1E6EC93300813765 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		BA51134A1E6EA0DE0022324B /* MapViewClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA51134E1E6EA0DE0022324B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA5113501E6EA0DE0022324B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		BA5113591E6EA0DE0022324B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA51135C1E6EA0DE0022324B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA51135E1E6EA0DE0022324B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5113651E6EA1B20022324B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA5113671E6EA1C30022324B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2ACB5E1E6EC93300813765 /* CoreTelephony.framework in Frameworks */,
+				BA5113681E6EA1C30022324B /* CoreLocation.framework in Frameworks */,
+				BA5113661E6EA1B20022324B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				BA51134C1E6EA0DE0022324B /* MapViewClass */,
 				BA51134B1E6EA0DE0022324B /* Products */,
+				BA5113641E6EA1B20022324B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +87,16 @@
 				BA51134E1E6EA0DE0022324B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA5113641E6EA1B20022324B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2ACB5D1E6EC93300813765 /* CoreTelephony.framework */,
+				BA5113671E6EA1C30022324B /* CoreLocation.framework */,
+				BA5113651E6EA1B20022324B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +291,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = MapViewClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.MapViewClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssgg.ysm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,10 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = MapViewClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.MapViewClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssgg.ysm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -310,6 +332,7 @@
 				BA5113631E6EA0DE0022324B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
