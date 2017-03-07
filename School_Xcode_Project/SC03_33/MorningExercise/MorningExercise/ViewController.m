@@ -6,8 +6,8 @@
 //  Copyright © 2017년 SSangGA. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "ViewController.h"  //파일
+#import <MapKit/MapKit.h>  //프레임워크
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -30,7 +30,9 @@
 //    txtview.returnKeyType = UIReturnKeySend;
     txtview.keyboardType = UIKeyboardTypePhonePad;
     [self.tv addSubview:txtview];
+    
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

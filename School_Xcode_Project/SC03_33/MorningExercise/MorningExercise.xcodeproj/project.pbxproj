@@ -16,6 +16,16 @@
 		BABB07D01E6CFD6E003FEDC1 /* jaeha.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BABB07CF1E6CFD6E003FEDC1 /* jaeha.jpeg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA9A419A1E6E806600122906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9A41961E6E806600122906 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA9A417C1E6E806600122906;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BA72A19E1E6CECE800FAB734 /* MorningExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorningExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA72A1A21E6CECE800FAB734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -27,6 +37,7 @@
 		BA72A1AD1E6CECE800FAB734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA72A1B01E6CECE800FAB734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA72A1B21E6CECE800FAB734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9A41961E6E806600122906 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = ../../MapView/MapView.xcodeproj; sourceTree = "<group>"; };
 		BABB07CF1E6CFD6E003FEDC1 /* jaeha.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaeha.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +71,7 @@
 		BA72A1A01E6CECE800FAB734 /* MorningExercise */ = {
 			isa = PBXGroup;
 			children = (
+				BA9A41961E6E806600122906 /* MapView.xcodeproj */,
 				BA72A1A41E6CECE800FAB734 /* AppDelegate.h */,
 				BA72A1A51E6CECE800FAB734 /* AppDelegate.m */,
 				BA72A1A71E6CECE800FAB734 /* ViewController.h */,
@@ -80,6 +92,14 @@
 				BA72A1A21E6CECE800FAB734 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA9A41971E6E806600122906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9A419B1E6E806600122906 /* MapView.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +133,7 @@
 				TargetAttributes = {
 					BA72A19D1E6CECE800FAB734 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YRRPYZBQ6X;
+						DevelopmentTeam = NN7QXHC8A3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,12 +149,28 @@
 			mainGroup = BA72A1951E6CECE800FAB734;
 			productRefGroup = BA72A19F1E6CECE800FAB734 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BA9A41971E6E806600122906 /* Products */;
+					ProjectRef = BA9A41961E6E806600122906 /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BA72A19D1E6CECE800FAB734 /* MorningExercise */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BA9A419B1E6E806600122906 /* MapView.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MapView.app;
+			remoteRef = BA9A419A1E6E806600122906 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BA72A19C1E6CECE800FAB734 /* Resources */ = {
@@ -275,10 +311,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YRRPYZBQ6X;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = MorningExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.MorningExercise;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -287,10 +324,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YRRPYZBQ6X;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = MorningExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.MorningExercise;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
