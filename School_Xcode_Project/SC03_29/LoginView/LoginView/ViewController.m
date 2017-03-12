@@ -32,15 +32,21 @@
     self.inputID.borderStyle=UITextBorderStyleRoundedRect;
     self.inputID.placeholder = @"ID를 입력하세요";
     self.inputID.tag = 1;
+    self.inputID.clearButtonMode = UITextFieldViewModeAlways;
+    [self.inputID setKeyboardType:UIKeyboardTypeAlphabet];
+    [self.inputID setEnablesReturnKeyAutomatically:YES];
     [self.view addSubview:self.inputID];
 
 //    P력입력
     self.inputPW = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width*50/100-150, self.view.frame.size.height*40/100, 300, 70)];
     self.inputPW.delegate = self;
-    self.inputPW.borderStyle=UITextBorderStyleBezel;
+    self.inputPW.borderStyle=UITextBorderStyleRoundedRect;
 //    self.inputPW.layer.borderWidth = 3.5;
     self.inputPW.placeholder = @"PW를 입력하세요";
     self.inputPW.tag = 2;
+    self.inputPW.clearButtonMode = UITextFieldViewModeAlways;
+    [self.inputPW setKeyboardType:UIKeyboardTypeAlphabet];
+    [self.inputPW setEnablesReturnKeyAutomatically:YES];
     [self.view addSubview:self.inputPW];
     
 //    회원가입버튼
@@ -183,18 +189,11 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    switch (textField.tag) {
-        case 1:
-            self.inputID.text = textField.text;
-            break;
-            
-        case 2:
-            self.inputPW.text = textField.text;
-            break;
-        default:
-            break;
+    if (textField.tag == 1) {
+        [self.inputPW becomeFirstResponder];
+    } else {
+        [self resignFirstResponder];
     }
-    [textField resignFirstResponder];
     return YES;
 }
 

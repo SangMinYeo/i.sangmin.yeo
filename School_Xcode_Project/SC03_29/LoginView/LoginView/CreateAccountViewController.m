@@ -8,6 +8,7 @@
 
 #import "CreateAccountViewController.h"
 
+
 @interface CreateAccountViewController ()
 <UITextFieldDelegate>
 
@@ -27,6 +28,17 @@
     self.inputID.borderStyle=UITextBorderStyleRoundedRect;
     self.inputID.placeholder = @"ID를 입력하세요";
     self.inputID.tag = 1;
+
+//    뷰를 생성하여 setLeftView하고 View모드를 정해주면 TextField안에 뷰를 넣고 그 다음부터 text입력
+//    UIImageView *cat = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+//    [cat setImage:[UIImage imageNamed:@"cat"]];
+//    [self.inputID setLeftView:cat];
+//    [self.inputID setLeftViewMode:UITextFieldViewModeAlways];
+
+    
+//    [self.inputID setClearButtonMode:UITextFieldViewModeWhileEditing];
+    [self.inputID setKeyboardType:UIKeyboardTypeAlphabet];
+    [self.inputID setEnablesReturnKeyAutomatically:YES];
     [self.view addSubview:self.inputID];
     
     //    P력입력
@@ -35,7 +47,12 @@
     self.inputPW.borderStyle=UITextBorderStyleRoundedRect;
     self.inputPW.placeholder = @"PW를 입력하세요";
     self.inputPW.tag = 2;
+    self.inputPW.clearButtonMode = UITextFieldViewModeAlways;
     [self.view addSubview:self.inputPW];
+    
+    
+    
+    
 
 //    회원가입완료 버튼
     UIButton *doneBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width*50/100-35, self.view.frame.size.height*70/100, 70, 50)];
@@ -58,6 +75,9 @@
 
 }
 
+
+
+
 //    가입완료 행동
 - (void)doneClick:(UIButton *)sender
 {
@@ -76,19 +96,22 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+//-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+//{
+//    
+//    return YES;
+//}
+
+
 //    텍스트필드 리턴시
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    switch (textField.tag) {
-        case 1:
-            self.inputID.text = textField.text;
-            break;
-        case 2:
-            self.inputPW.text = textField.text;
-        default:
-            break;
+    if (textField.tag == 1) {
+        [self.inputPW becomeFirstResponder];
+    } else {
+    [self.inputPW resignFirstResponder];
     }
-    [textField resignFirstResponder];
     return YES;
 }
 

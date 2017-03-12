@@ -38,6 +38,7 @@
         libController.delegate = self;
         [self presentViewController:libController animated:YES completion:nil];
         
+        
         [photoLib dismissViewControllerAnimated:YES completion:nil];
       
         
@@ -107,10 +108,11 @@
 - (IBAction)alertClick:(id)sender
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"로그인 실패" message:@"아이디 또는 암호가 틀렸습니다" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+    {
         NSLog(@"ok버튼이 클릭되었습니다");
     }];
-//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
 //        NSLog(@"cancel");
 //    }];
     
