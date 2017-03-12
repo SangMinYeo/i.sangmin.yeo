@@ -35,11 +35,11 @@
 }
 
 //  데이터 변경
-//- (NSMutableArray *)changeData
-//{
-//    NSMutableDictionary *temp = (NSMutableDictionary *)[[DataCenter defaultData]callOfData];
-//    [temp setObject:[], forKey:@"name"]
-//}
+- (NSMutableArray *)changeData
+{
+    NSMutableDictionary *temp = (NSMutableDictionary *)[[DataCenter defaultData]callOfData];
+    [temp setObject:[], forKey:@"name"]
+}
 
 
 

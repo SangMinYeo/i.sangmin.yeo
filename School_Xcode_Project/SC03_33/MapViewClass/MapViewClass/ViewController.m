@@ -20,6 +20,7 @@
 <CLLocationManagerDelegate>
 @property (nonatomic) IBOutlet MKMapView *mapVw;
 @property (nonatomic) CLLocationManager *manager;
+@property (nonatomic) MKUserLocation *userLoc;
 
 @end
 
@@ -44,7 +45,14 @@
     self.manager.delegate = self;
     self.manager.desiredAccuracy = kCLLocationAccuracyBest;
     [self.manager requestWhenInUseAuthorization];
-
+    self.mapVw.showsScale = YES;
+    self.mapVw.showsCompass = YES;
+    self.mapVw.showsTraffic = YES;
+    self.mapVw.showsBuildings = YES;
+    self.mapVw.showsUserLocation = YES;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.mapVw.userLocation.location.coordinate, 50, 50);
+    [self.mapVw setRegion:region animated:YES];
+    
     
     [self.manager startUpdatingLocation];
 }
@@ -54,7 +62,7 @@
 {
 
     [manager stopUpdatingLocation];
-    
+    NSLog(@"this");
     CLLocationCoordinate2D coordinate = ((CLLocation *)locations.lastObject).coordinate;
     //CLLocationCoordinate2D coordinate = self.mapVw.userLocation.coordinate;
 

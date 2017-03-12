@@ -33,7 +33,12 @@
     [self.view addSubview:self.addFriendTxt];
 }
 
-- (IBAction)saveClicked:(id)sender {
+- (IBAction)saveClicked:(id)sender
+{
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:doucPath];
+    [dic setValue:self.addFriendTxt.text forKey:@"이름"];
+    [dic setValue:self.addPhoneTxt.text forKey:@"전화번호"];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -41,17 +46,11 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    switch (textField.tag) {
-        case 1:
-            self.addFriendTxt.text = textField.text;
-            break;
-        case 2:
-            self.addPhoneTxt.text = textField.text;
-            break;
-        default:
-            break;
-    }
+    if (textField.tag == 1) {
+        [self.addPhoneTxt becomeFirstResponder];
+    } else {
     [textField resignFirstResponder];
+    }
     return YES;
 }
 

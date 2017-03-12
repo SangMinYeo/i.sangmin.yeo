@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2F0A881E6F0EFC00BA6BB7 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2F0A871E6F0EFC00BA6BB7 /* cat.png */; };
 		BA4089F01E5FC59200C9D75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4089EF1E5FC59200C9D75D /* main.m */; };
 		BA4089F31E5FC59200C9D75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4089F21E5FC59200C9D75D /* AppDelegate.m */; };
 		BA4089F61E5FC59200C9D75D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4089F51E5FC59200C9D75D /* ViewController.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2F0A871E6F0EFC00BA6BB7 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		BA4089EB1E5FC59200C9D75D /* LoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4089EF1E5FC59200C9D75D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA4089F11E5FC59200C9D75D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				BA408A061E5FD20D00C9D75D /* CreateAccountViewController.m */,
 				BA408A081E5FD65100C9D75D /* LoginViewController.h */,
 				BA408A091E5FD65100C9D75D /* LoginViewController.m */,
+				BA2F0A871E6F0EFC00BA6BB7 /* cat.png */,
 				BA4089F71E5FC59200C9D75D /* Main.storyboard */,
 				BA4089FA1E5FC59200C9D75D /* Assets.xcassets */,
 				BA4089FC1E5FC59200C9D75D /* LaunchScreen.storyboard */,
@@ -125,7 +128,7 @@
 				TargetAttributes = {
 					BA4089EA1E5FC59200C9D75D = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 368UPH58KA;
+						DevelopmentTeam = NN7QXHC8A3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2F0A881E6F0EFC00BA6BB7 /* cat.png in Resources */,
 				BA408A0C1E601D6400C9D75D /* Local.strings in Resources */,
 				BA4089FE1E5FC59200C9D75D /* LaunchScreen.storyboard in Resources */,
 				BA4089FB1E5FC59200C9D75D /* Assets.xcassets in Resources */,
@@ -293,10 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 368UPH58KA;
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = LoginView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssgg.ysm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -305,10 +309,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 368UPH58KA;
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = LoginView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SSG.com.LoginView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssgg.ysm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
