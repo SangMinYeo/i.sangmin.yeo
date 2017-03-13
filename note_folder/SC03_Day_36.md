@@ -31,27 +31,27 @@ _오늘 수업에서는 NSThread, GCD를 하고 NSTimer도 해본다._
 ###요소
 - Initializing
 
-```		initWithTarget:selector:object;```
+"`initWithTarget:selector:object;"`
 
 - Starting a Thread
 
-```+ detachNewThreadSelector:toTarget:withObject ```
+"`+ detachNewThreadSelector:toTarget:withObject "`
 
-```- start```
+"`- start"`
 
 - Stopptin a Thread
 
-```	+ sleepForTimeInterval:```
+"`	+ sleepForTimeInterval:"`
 
-```- cancel ```(함수이고 bool값이 바뀜)
+"`- cancel "`(함수이고 bool값이 바뀜)
 
 - Execution State
 
-```@property executing```
+"`@property executing"`
 
-```@property finished```
+"`@property finished"`
 
-```@property cancelled```
+"`@property cancelled"`
 
 
 ##GCD (Grand Centeral Dispatch)
@@ -80,24 +80,26 @@ _직렬은 꼭 FIFO이지만, 병렬은 꼭 FIFO가 아니다._
 - App전역에 사용되는 queue로서 concurrent방식의 queue이다.
 - 총 4개의 queue로 이루어져있으며 중요도에 따라 High, Default, Low, Background queue중 선택됨
 - 생성
-
-		#define DISPATCH_QUEUE_PRIORITY_HIGH
-		#define DISPATCH_QUEUE_PRIORITY_DEFAULT
-		#define DISPATCH_QUEUE_PRIORITY_LOW
-		#define DISPATCH_QUEUE_PRIORITY_BACKGROUND
+"`objc
+#define DISPATCH_QUEUE_PRIORITY_HIGH
+#define DISPATCH_QUEUE_PRIORITY_DEFAULT
+#define DISPATCH_QUEUE_PRIORITY_LOW
+#define DISPATCH_QUEUE_PRIORITY_BACKGROUND
+"`
 
 ###Private dispatch queue
 - 사용자 정의 queue
 - Serial 방식, Concurrent방식
 - 생성
-
-		dispatch_queue_t concurrent_queue =
-		dispatch_queue_create("queue.name", DISPATCH_QUEUE_CONCURRE)
-		dispatch_queue_t serial_queue = 
-		dispatch_queue_create("queue.name", DISPATCH_QUEUE_SERUAL)
+"`
+dispatch_queue_t concurrent_queue =
+dispatch_queue_create("queue.name", DISPATCH_QUEUE_CONCURRE)
+dispatch_queue_t serial_queue = 
+dispatch_queue_create("queue.name", DISPATCH_QUEUE_SERUAL)
+"`
 
 ###Dispatch_after
-```objc
+"`objc
 dispatch_queue_t queue = dispatch_queue_create("com.wing.test",DISPATCH_QUEUE_CONCURRENT);
 double delayInSeconds = 2.0;
 dispatch_time_t popTime =dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -106,11 +108,10 @@ dispatch_async(queue, ^{ NSLog(@"Call 2");});
 dispatch_async(queue, ^{ NSLog(@"Call 3");});
 dispatch_async(queue, ^{ NSLog(@"Call 4");});
 dispatch_async(queue, ^{ NSLog(@"Call 5");});
-
-```
+"`
 
 ###Dispatch_barrier_async
-```objc
+"`objc
 dispatch_queue_t queue = dispatch_queue_create("com.wing.test", DISPATCH_QUEUE_CONCURRENT);
 dispatch_async(queue, ^{ NSLog(@"Call 1"); });
 dispatch_async(queue, ^{ NSLog(@"Call 2"); });
@@ -124,5 +125,5 @@ dispatch_async(queue, ^{ NSLog(@"Call 7"); });
 dispatch_async(queue, ^{ NSLog(@"Call 8"); });
 dispatch_async(queue, ^{ NSLog(@"Call 9"); });
 dispatch_async(queue, ^{ NSLog(@"Call 10"); });
-```
+"`
 
