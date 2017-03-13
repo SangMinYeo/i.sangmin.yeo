@@ -17,7 +17,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"1");
+    });
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"2");
+    });
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"3");
+    });
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"4");
+    });
+    
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {

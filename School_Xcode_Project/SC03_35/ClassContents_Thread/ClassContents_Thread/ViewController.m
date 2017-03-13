@@ -29,8 +29,15 @@
 - (IBAction)didClicked:(id)sender {
     self.thd = [[NSThread alloc] initWithTarget:self selector:@selector(mainThreadSetText:) object:nil];
     [self threadExec:sender];
-    
-
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (int i = 0 ; i < 100; i++)
+        {
+            usleep(10000);
+//            dispatch_sync(dispatch_get_main_queue(),^{
+                [self.t_label setText:[NSString stringWithFormat:@"%d",i]];
+//            });
+        }
+//    });
 }
 
 - (void)threadExec:(NSString *)str
