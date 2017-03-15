@@ -96,7 +96,7 @@
     tvc.textLabel.text = [[self.mammaliaImageSet objectAtIndex:indexPath.row] objectForKey:@"name"];
     NSString *imgName = [[self.mammaliaImageSet objectAtIndex:indexPath.row] objectForKey:@"imgURL"];
     tvc.imageView.image = [UIImage imageNamed:imgName];
-    tvc.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+//    tvc.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     
     return tvc;

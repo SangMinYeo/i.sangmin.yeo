@@ -46,7 +46,7 @@
 //    3. 페이지 전환
 //    [self presentViewController:sVC animated:YES completion:nil];
 //    [sVC setModalPresentationCapturesStatusBarAppearance:YES];
-//    [sVC setModalPresentationStyle:UI];
+    [sVC setModalPresentationStyle:UI];
 //    [self presentViewController:sVC animated:YES completion:nil]; //modali 표현
     [self.navigationController pushViewController:sVC animated:YES];
     

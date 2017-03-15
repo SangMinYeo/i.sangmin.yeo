@@ -310,6 +310,7 @@
 				BAFCA7DB1E7676E3008C909A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
