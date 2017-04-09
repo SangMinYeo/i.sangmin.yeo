@@ -13,6 +13,7 @@
 		BA0979CE1E84F68D00CDCB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0979CC1E84F68D00CDCB7D /* Main.storyboard */; };
 		BA0979D01E84F68D00CDCB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0979CF1E84F68D00CDCB7D /* Assets.xcassets */; };
 		BA0979D31E84F68D00CDCB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0979D11E84F68D00CDCB7D /* LaunchScreen.storyboard */; };
+		BA0979DC1E84FB1B00CDCB7D /* CoverFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0979DB1E84FB1B00CDCB7D /* CoverFlow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		BA0979CF1E84F68D00CDCB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0979D21E84F68D00CDCB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0979D41E84F68D00CDCB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0979DA1E84FB1B00CDCB7D /* CoverFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlow.h; sourceTree = "<group>"; };
+		BA0979DB1E84FB1B00CDCB7D /* CoverFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				BA0979C71E84F68D00CDCB7D /* AppDelegate.m */,
 				BA0979C91E84F68D00CDCB7D /* ViewController.h */,
 				BA0979CA1E84F68D00CDCB7D /* ViewController.m */,
+				BA0979DA1E84FB1B00CDCB7D /* CoverFlow.h */,
+				BA0979DB1E84FB1B00CDCB7D /* CoverFlow.m */,
 				BA0979CC1E84F68D00CDCB7D /* Main.storyboard */,
 				BA0979CF1E84F68D00CDCB7D /* Assets.xcassets */,
 				BA0979D11E84F68D00CDCB7D /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0979CB1E84F68D00CDCB7D /* ViewController.m in Sources */,
+				BA0979DC1E84FB1B00CDCB7D /* CoverFlow.m in Sources */,
 				BA0979C81E84F68D00CDCB7D /* AppDelegate.m in Sources */,
 				BA0979C51E84F68D00CDCB7D /* main.m in Sources */,
 			);

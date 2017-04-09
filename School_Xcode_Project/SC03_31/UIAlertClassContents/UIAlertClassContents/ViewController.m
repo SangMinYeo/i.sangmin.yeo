@@ -112,16 +112,14 @@
     {
         NSLog(@"ok버튼이 클릭되었습니다");
     }];
-//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
-//        NSLog(@"cancel");
-//    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action){
+        NSLog(@"cancel");
+    }];
     
     
     [alertController addAction:okAction];
-//    [alertController addAction:cancelAction];
-    [self presentViewController:alertController animated:YES completion:^{
-        <#code#>
-    }];
+    [alertController addAction:cancelAction];
+    
 
 }
 
