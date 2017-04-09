@@ -19,21 +19,12 @@
 -  Subclassing
 - 부모 클래스와 자식 클래스로 구성
 - 하위클래스로 갈수록 범위가 확장되는 개념.
-```Objective-c
+``` Object-C
 @interface Warrior : NSObject
 @property NSString *name;
 ```
-
-
-
-iOS프레임워크 UIKit의 하위프레임 워크
-
-NSObject
-
-UIResponder
-
-UIApplication	UIView	UIViewController
-UIImageView	UILabe	UIControl	 UIWindows	UIScrollView
+ * NSObject Hierachy
+![NSObject_hierachy](https://github.com/SangMinYeo/i.sangmin.yeo/blob/master/note_folder/image/nsobject_hierarchy.jpg?raw=true)
 
 
 

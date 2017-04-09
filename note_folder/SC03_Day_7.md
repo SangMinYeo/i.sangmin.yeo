@@ -30,9 +30,9 @@
 - 객체가 되었을 때 가지는 상태값을 set하고 get해봅니다.
 
 ## .h & .m & main.h파일의 관계도
-￼
+!￼[파일관계도](https://github.com/SangMinYeo/i.sangmin.yeo/blob/master/note_folder/image/file_relationship.png?raw=true)
 
-## 주석 
+## 주석
 주석달기 참고 링크
 
 
