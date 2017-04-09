@@ -16,7 +16,7 @@
 @implementation DataCenter
 
 //   파일불러오기
-- (NSArray *)callOfData
+- (void)callOfData:(NSString *)name phone(NSString *)phone
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
@@ -30,16 +30,28 @@
         NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"plist"];
         [fileManager copyItemAtPath:bundlePath toPath:docuPath error:nil];
     }
-    NSArray *arr = [NSArray arrayWithContentsOfFile:docuPath];
-    return arr;
+    NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:docuPath];
+    NSDictionary *dic = @{@"이름":@"name", @"전화번호":@"phone"};
+    [arr
+    
+//    NSMutableArray *friendList = [NSMutableArray arrayWithContentsOfFile:docuPath];
+//    
+//    NSDictionary *dic = @{@"name":name,@"phone":phone};
+//    
+//    [friendList addObject:dic];
+//    //저장
+//    [friendList writeToFile:docuPath atomically:NO];
+//    
+//    self.friendCount++;
+
 }
 
 //  데이터 변경
-- (NSMutableArray *)changeData
-{
-    NSMutableDictionary *temp = (NSMutableDictionary *)[[DataCenter defaultData]callOfData];
-    [temp setObject:[], forKey:@"name"]
-}
+//- (NSMutableArray *)changeData
+//{
+//    NSMutableDictionary *temp = (NSMutableDictionary *)[[DataCenter defaultData]callOfData];
+//    [temp setObject:[], forKey:@"name"]
+//}
 
 
 

@@ -7,13 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "NetworkModuleViewController.h"
 
 @interface ViewController ()
 <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *loginTitle;
-@property (weak, nonatomic) IBOutlet UITextField *loginIDTxt;
+@property (strong, nonatomic) IBOutlet UITextField *loginIDTxt;
 @property (weak, nonatomic) IBOutlet UITextField *loginPWTxt;
 @property (strong, nonatomic) IBOutlet UIImageView *imageTest;
+@property (strong, nonatomic) NetworkModuleViewController *networkObject;
+
 
 @end
 
@@ -42,27 +45,78 @@
         }
     }];
     [task resume];
+    
 }
+
+//로그인 버튼 액션
 - (IBAction)didClickedLogInBtn:(id)sender
 {
+    
+    NetworkModuleViewController *networkModule = [[NetworkModuleViewController alloc] init];
+    [networkModule logInWithUserName:self.loginIDTxt.text password:self.loginPWTxt.text completion:^(BOOL sucess, NSDictionary *data) {
+        if (sucess) {
+            //YES
+        } else {
+            //NO
+        }
+    }];
+    
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     UIViewController *mainVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    [self.networkObject passAccountToNWmodule:^NSString *{
+        return self.loginIDTxt.text;
+    } password:^NSString *{
+        return self.loginPWTxt.text;
+    }];
+//    [self.networkObject logIn:<#^(BOOL sucess, NSDictionary *data)completion#>^{
+    [self presentViewController:mainVC animated:YES completion:nil];
+    [mainVC setModalPresentationStyle:UIModalPresentationFullScreen];
+    
+
+}
+
+
+
+
+//SignUp 버튼 액션
+- (IBAction)didClickedSignUpBtn:(id)sender
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIViewController *mainVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
     [self presentViewController:mainVC animated:YES completion:nil];
     [mainVC setModalPresentationStyle:UIModalPresentationFullScreen];
 }
 
+
+//프레임 스타일 설정
 - (void)setFrameStyle
 {
-    self.loginIDTxt.borderStyle = UITextBorderStyleNone;
-    self.loginPWTxt.borderStyle = UITextBorderStyleNone;
+    self.loginIDTxt.tag = 1;
+    self.loginPWTxt.tag = 2;
+    
+//    self.loginIDTxt.borderStyle = UITextBorderStyleBezel;
+//    self.loginPWTxt.borderStyle = UITextBorderStyleBezel;
+//    UIColor *p_color = [UIColor colorWithRed:237 green:206 blue:212 alpha:0];
+    UIColor *p_color = [UIColor lightGrayColor];
+    self.loginIDTxt.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"ID를 입력하세요" attributes:@{NSForegroundColorAttributeName:p_color}];
+    self.loginPWTxt.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"암호를 입력하세요" attributes:@{NSForegroundColorAttributeName:p_color}];
+
+//    UIColor *color = [UIColor whiteColor];
+//    self.idTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"User Name" attributes:@{NSForegroundColorAttributeName:color}];
+//    self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{NSForegroundColorAttributeName:color}];
 }
 
+
+
+//UITextField delegate
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-   
-    [self.loginIDTxt resignFirstResponder];
+    if (textField.tag == 1) {
+        [self.loginPWTxt becomeFirstResponder];
+    } else {
     [self.loginPWTxt resignFirstResponder];
-    return nil;
+    }
+    return YES;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

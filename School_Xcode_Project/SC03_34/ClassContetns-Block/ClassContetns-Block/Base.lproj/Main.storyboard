@@ -30,7 +30,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="didTouchedBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc2-Gr-zYp"/>
                                             <action selector="onTouchButton:" destination="r0X-7U-vVy" eventType="touchUpInside" id="4T7-OU-4ZK"/>
                                         </connections>
                                     </button>

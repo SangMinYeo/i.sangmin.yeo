@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+//typedef void(^Completion)(BOOL sucess,NSDictionary *data);
+typedef NSString *(^NWmodule)(void);
 
+
+
+//-(NSString *)sendTextFieldTextToNetworkModuleVC:(NWmodule)completion;
 
 @end
 

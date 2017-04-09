@@ -17,7 +17,7 @@
 ###REST사용원칙
 - Resource : URI들은 쉽게 자원의 내용을 이해 할 수 있게 만들어야한다.
 - Representations : 객체와 속성을 나타내는 데이터를 JSON이나 XML구조로 변환해서 표현한다.
-- MEssages : HTTP Methods
+- Messages : HTTP Methods
 - Stateless : Server와 Client의 요청사항은 저장하지 않는다. Clien는 session상태를 유지한다.
 
  
@@ -106,6 +106,39 @@ ATS설정은 info.plist  파일에서 새로운 row를 추가하여 할 수 있�
 * NSURLRequest
 
 > 데이터 요청에 대한 내용
+
+
+##네트워크 2일차
+
+###Using HTTP Request
+url
+메소드
+바디
+컨텐츠 타입
+
+##네트워크 3일차
+
+##Data Form
+바운더리
+컨텐츠 디스포션		이게 하나의 블록
+컨텐츠 타입
+실제데이터
+
+바운더리
+컨텐츠 디스포션		이게 하나의 블록
+실제데이터
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  

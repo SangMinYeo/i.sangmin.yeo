@@ -7,6 +7,7 @@
 //
 
 #import "AddViewController.h"
+#import "DataCenter.h"
 
 @interface AddViewController ()
 <UITextFieldDelegate>

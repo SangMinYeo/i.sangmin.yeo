@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0033131E7BB0ED00095C30 /* NetworkModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0033121E7BB0ED00095C30 /* NetworkModuleViewController.m */; };
+		BA0033161E7BCC7F00095C30 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0033151E7BCC7F00095C30 /* DataCenter.m */; };
 		BA4B4C011E78FD8800158356 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B4C001E78FD8800158356 /* main.m */; };
 		BA4B4C041E78FD8800158356 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B4C031E78FD8800158356 /* AppDelegate.m */; };
 		BA4B4C071E78FD8800158356 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B4C061E78FD8800158356 /* ViewController.m */; };
@@ -15,9 +17,15 @@
 		BA4B4C0F1E78FD8800158356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4B4C0D1E78FD8800158356 /* LaunchScreen.storyboard */; };
 		BA4B4C1A1E79048200158356 /* decisions-and-impulsivity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA4B4C191E79048200158356 /* decisions-and-impulsivity.jpg */; };
 		BA847D721E79294B00149F89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA847D711E79294B00149F89 /* MainViewController.m */; };
+		BA921D9D1E7A53DE00D4B987 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA921D9C1E7A53DE00D4B987 /* SignUpViewController.m */; };
+		BA921DA21E7A5D2800D4B987 /* account.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA921DA11E7A5D2800D4B987 /* account.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0033111E7BB0ED00095C30 /* NetworkModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkModuleViewController.h; sourceTree = "<group>"; };
+		BA0033121E7BB0ED00095C30 /* NetworkModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModuleViewController.m; sourceTree = "<group>"; };
+		BA0033141E7BCC7F00095C30 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		BA0033151E7BCC7F00095C30 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		BA4B4BFC1E78FD8800158356 /* ClassContetns_network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassContetns_network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4B4C001E78FD8800158356 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA4B4C021E78FD8800158356 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +39,9 @@
 		BA4B4C191E79048200158356 /* decisions-and-impulsivity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decisions-and-impulsivity.jpg"; sourceTree = "<group>"; };
 		BA847D701E79294B00149F89 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		BA847D711E79294B00149F89 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BA921D9B1E7A53DE00D4B987 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		BA921D9C1E7A53DE00D4B987 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		BA921DA11E7A5D2800D4B987 /* account.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = account.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +78,20 @@
 				BA4B4C031E78FD8800158356 /* AppDelegate.m */,
 				BA4B4C051E78FD8800158356 /* ViewController.h */,
 				BA4B4C061E78FD8800158356 /* ViewController.m */,
-				BA4B4C081E78FD8800158356 /* Main.storyboard */,
 				BA847D701E79294B00149F89 /* MainViewController.h */,
 				BA847D711E79294B00149F89 /* MainViewController.m */,
+				BA0033141E7BCC7F00095C30 /* DataCenter.h */,
+				BA0033151E7BCC7F00095C30 /* DataCenter.m */,
+				BA0033111E7BB0ED00095C30 /* NetworkModuleViewController.h */,
+				BA0033121E7BB0ED00095C30 /* NetworkModuleViewController.m */,
+				BA921D9B1E7A53DE00D4B987 /* SignUpViewController.h */,
+				BA921D9C1E7A53DE00D4B987 /* SignUpViewController.m */,
+				BA4B4C081E78FD8800158356 /* Main.storyboard */,
 				BA4B4C1B1E79049100158356 /* images */,
 				BA4B4C0B1E78FD8800158356 /* Assets.xcassets */,
 				BA4B4C0D1E78FD8800158356 /* LaunchScreen.storyboard */,
 				BA4B4C101E78FD8800158356 /* Info.plist */,
+				BA921DA11E7A5D2800D4B987 /* account.plist */,
 				BA4B4BFF1E78FD8800158356 /* Supporting Files */,
 			);
 			path = ClassContetns_network;
@@ -156,6 +174,7 @@
 			files = (
 				BA4B4C0F1E78FD8800158356 /* LaunchScreen.storyboard in Resources */,
 				BA4B4C1A1E79048200158356 /* decisions-and-impulsivity.jpg in Resources */,
+				BA921DA21E7A5D2800D4B987 /* account.plist in Resources */,
 				BA4B4C0C1E78FD8800158356 /* Assets.xcassets in Resources */,
 				BA4B4C0A1E78FD8800158356 /* Main.storyboard in Resources */,
 			);
@@ -169,7 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA4B4C071E78FD8800158356 /* ViewController.m in Sources */,
+				BA921D9D1E7A53DE00D4B987 /* SignUpViewController.m in Sources */,
 				BA4B4C041E78FD8800158356 /* AppDelegate.m in Sources */,
+				BA0033131E7BB0ED00095C30 /* NetworkModuleViewController.m in Sources */,
+				BA0033161E7BCC7F00095C30 /* DataCenter.m in Sources */,
 				BA4B4C011E78FD8800158356 /* main.m in Sources */,
 				BA847D721E79294B00149F89 /* MainViewController.m in Sources */,
 			);

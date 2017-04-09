@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "DataCenter.h"
 
 @interface MainViewController ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -18,12 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UITableView *tb = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    UITableView *tb = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
     tb.delegate = self;
     tb.dataSource = self;
     [self.view addSubview:tb];
 }
 
+//셀 for Row
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -34,16 +36,15 @@
     cell.textLabel.text = @"사진";
     cell.imageView.image = cellImg;
     cell.selectionStyle = UITableViewCellSelectionStyleBlue;
-    cell.style
-    
-    
     return cell;
 }
 
+//섹션 갯수
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
