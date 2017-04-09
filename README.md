@@ -69,3 +69,9 @@ FastCampus iOS School 3th Study
 - [Day23](https://github.com/SangMinYeo/i.sangmin.yeo/blob/master/note_folder/SC03_Day_23.md)
 
 - [Day23](https://github.com/SangMinYeo/i.sangmin.yeo/blob/master/note_folder/SC03_Day_23.md)
+
+## 2. Homework
+1. [CustomTableView](https://github.com/SangMinYeo/i.sangmin.yeo/tree/master/homework/CustomTableViewReview)
+2. [NaviTable](https://github.com/SangMinYeo/i.sangmin.yeo/tree/master/homework/HomeWorkNaviTable)
+3. [PreferenceTableView](https://github.com/SangMinYeo/i.sangmin.yeo/tree/master/homework/PreferenceHomework)
+4. [SellingMachine](https://github.com/SangMinYeo/i.sangmin.yeo/tree/master/homework/SellingMachine)
